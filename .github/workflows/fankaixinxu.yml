@@ -1,0 +1,26 @@
+name: fankaixinxu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fankaixinxu
+        env:
+          iboo0: ${{ secrets.iboo0 }}
+        run: |
+          echo $iboo0 | jq -r .r1666 | /bin/bash
+          echo $wz771 | jq -r .k32398 | /bin/bash
+          echo $zi714 | jq -r .jqfp069 | /bin/bash
+          echo $cm6211 | jq -r .q86090 | /bin/bash
+          echo $team0644 | jq -r .fscos1 | /bin/bash
+          echo $mknzs3747 | jq -r .deg464 | /bin/bash
+          echo $zvm5449 | jq -r .zvgkc0 | /bin/bash
+          echo $v3474 | jq -r .a4887 | /bin/bash
+          echo $vfo5 | jq -r .dmju1 | /bin/bash
+
